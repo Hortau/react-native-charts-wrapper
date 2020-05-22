@@ -206,10 +206,11 @@
 
 | Prop                      | Type                                                                        | Default | Note |
 | ------------------------- | --------------------------------------------------------------------------- | ------- | ---- |
+| `extraOffsets`            | `{`<br />`left: number,`<br />`top: number,`<br />`right: number,`<br />`bottom: number,`<br />`}` |         |      |
 | `drawEntryLabels`         | `bool`                                                                      |         |      |
 | `usePercentValues`        | `bool`                                                                      |         |      |
 | `centerText`              | `string`                                                                    |         |      |
-| `styledCenterText`        | `{`<br />`text: string,`<br />`color: number,`<br />`size: number`<br />`}` |         |      |
+| `styledCenterText`        | `{`<br />`text: string,`<br />`color: number,`<br />`fontFamily: string,`<br />`fontWeight: string,`<br />`size: number`<br />`}` |         |      |
 | `centerTextRadiusPercent` | `number`                                                                    |         |      |
 | `holeRadius`              | `number`                                                                    |         |      |
 | `holeColor`               | `number`                                                                    |         |      |
@@ -217,6 +218,7 @@
 | `transparentCircleColor`  | `number`                                                                    |         |      |
 | `entryLabelColor`         | `number`                                                                    |         |      |
 | `entryLabelTextSize`      | `number`                                                                    |         |      |
+| `entryLabelTypeface`      | `{`<br />`fontWeight: number`<br />`}`                                      |         |      |
 | `maxAngle`                | `number`                                                                    |         |      |
 | `data`                    | `DataTypes.pieData`                                                         |         |      |
 

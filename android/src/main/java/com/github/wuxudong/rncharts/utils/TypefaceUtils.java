@@ -13,10 +13,13 @@ import com.github.mikephil.charting.charts.Chart;
 
 public class TypefaceUtils {
     public static Typeface getTypeface(Chart chart, ReadableMap propMap) {
-        String fontFamily = propMap.getString("fontFamily");
+        String fontFamily = "sans-serif";
         boolean italic = false;
         boolean bold = false;
         int style = Typeface.NORMAL;
+        if (BridgeUtils.validate(propMap, ReadableType.String, "fontFamily")) {
+            fontFamily = propMap.getString("fontFamily");
+        }
         if (BridgeUtils.validate(propMap, ReadableType.String, "fontStyle")) {
             italic = "italic".equals(propMap.getString("fontStyle"));
         }
