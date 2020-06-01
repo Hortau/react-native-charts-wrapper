@@ -153,7 +153,7 @@ class RNPieChartView: RNChartViewBase {
             bottomOffset = CGFloat(json["bottom"].floatValue)
         }
 
-        chart.setExtraOffsets(leftOffset, topOffset, rightOffset, bottomOffset)
+        chart.setExtraOffsets(left: leftOffset, top: topOffset, right: rightOffset, bottom: bottomOffset)
     }
 
     func setDrawEntryLabels(_ enabled: Bool) {
